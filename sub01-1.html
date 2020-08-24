@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li class="on"><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">회원관리</a></li>
+                <li><a href="">회원등록</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="overflow-h">
+                <div class="contBox float-l w49p">
+                    <h2 class="inputTitle txtcenter font-blue mt20">회원정보</h2>
+                    <hr class="mt10">
+                    <div class="inputWrap mt20">
+                        <label for="sub01-1_id" class="w22p mr3p">아이디</label>
+                        <input type="text" name="" id="sub01-1_id" class="w75p" placeholder="영문만 사용 가능" required>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_pw" class="w22p mr3p">비밀번호</label>
+                        <input type="password" name="" id="sub01-1_pw" class="w75p" placeholder="영문, 숫자, 특수기호 중 2개 이상 조합해 주세요" required>
+                    </div>
+                    <div class="inputWrap mt10">                        
+                        <label for="sub01-1_pwConfirm" class="w22p mr3p">비밀번호 확인</label>
+                        <input type="password" name="" id="sub01-1_pwConfirm" class="w75p" placeholder="비밀번호를 한 번 더 입력해 주세요" required>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_manager" class="w22p mr3p">담당자</label>
+                        <input type="text" name="" id="sub01-1_manager" class="w75p" required>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_phone" class="w22p mr3p">연락처</label>
+                        <input type="tel" name="" id="sub01-1_phone" class="w75p" placeholder="010-1234-5678" required>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_email" class="w22p mr3p">이메일</label>
+                        <input type="email" name="" id="sub01-1_email" class="w75p" placeholder="abc@abc.com" required>
+                    </div>
+                </div>           
+                <div class="contBox float-r w49p">
+                    <h2 class="inputTitle txtcenter font-red mt20">기업정보</h2>
+                    <hr class="mt10">
+                    <div class="inputWrap mt20">
+                        <label for="sub01-1_taxCode" class="w22p mr3p">세무코드</label>
+                        <input type="text" name="" id="sub01-1_taxCode" class="w52p mr3p" placeholder="영문만 사용 가능" required>
+                        <input type="button" class="btn-white w20p line-height34" value="확인">
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_corpName" class="w22p mr3p">기업명</label>
+                        <input type="text" name="" id="sub01-1_corpName" class="w75p" disabled>
+                    </div>
+                    <div class="inputWrap mt10">                        
+                        <label for="sub01-1_corpAddress" class="w22p mr3p">기업명</label>
+                        <input type="text" name="" id="sub01-1_corpAddress" class="w75p" disabled>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_bossName" class="w22p mr3p">대표자명</label>
+                        <input type="text" name="" id="sub01-1_bossName" class="w75p">
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_representNum" class="w22p mr3p">대표번호</label>
+                        <input type="tel" name="" id="representNum" class="w75p" placeholder="010-1234-5678" required>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub01-1_fax" class="w22p mr3p">FAX</label>
+                        <input type="tel" name="" id="sub01-1_fax" class="w75p">
+                    </div>
+                </div> 
+            </div>
+            <div class="btnWrap mt50">
+                <input type="button" onclick="location.href='sub01.html'" class="btn-white btn-lg mr10" value="취소">
+                <input type="submit" class="btn-navy btn-lg" value="등록">
+            </div>        
+        </form>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

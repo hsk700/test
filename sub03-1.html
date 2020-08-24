@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li class="on"><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">영수증 양식 관리</a></li>
+                <li><a href="">등록</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="contBox overflow-h pb50">
+                <div class="float-l w49p mr1">
+                    <div class="inputWrap">
+                        <label for="sub03_1_billType" class="w25p mr3p">영수증 유형</label>
+                        <select name="" id="sub03_1_billType" class="w72p">
+                            <option value="선택" selected>선택</option>
+                            <option value="VAT영수증">VAT영수증</option>
+                            <option value="판매영수증">판매영수증</option>
+                            <option value="판매영수증(기관)">판매영수증(기관)</option>
+                            <option value="회사내 운송 전표">회사내 운송 전표</option>
+                            <option value="회사내 위탁전표">회사내 위탁전표</option>
+                        </select>
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub03_1_sampleName" class="w25p mr3p">샘플 양식명</label>
+                        <input type="text" name="" id="sub03_1_sampleName" class="w72p">
+                    </div>
+                    <div class="inputWrap mt10">
+                        <label for="sub03_1_typeUrl" class="w25p mr3p">양식 URL</label>
+                        <input type="text" name="" id="sub03_1_typeUrl" class="w42p mr3p">
+                        <input type="button" name="" id="sub03_1_urlSubmit" class="w27p btn-gray btn-lg" value="확인">
+                    </div>
+                    <div class="inputWrap overflow-h mt10">
+                        <label for="sub03_1_preview" class="float-r">전환 세금계산서 미리보기</label>
+                        <input type="checkbox" name="" id="sub03_1_preview" class="float-r mr10" checked>
+                    </div>
+                </div>
+                <div class="float-r w49p ml1p">
+                    <div class="overflow-h mt5">
+                        <span class="float-l font-b line-height35">미리보기</span>
+                        <span class="float-r pt7">
+                            <button type="button" class="zoomIn"></button>
+                            <button type="button" class="zoomOut"></button>
+                        </span>
+                    </div>
+                    <div class="contBox txtcenter">
+                        <img src="img/img_bill_sample.png" class="h100p" alt="영수증 양식 샘플">
+                    </div>
+                </div>
+            </div>
+            <div class="btnWrap txtcenter mt20">
+                <input type="button" class="btn-white btn-lg mr10" onclick="location.href='sub03.html'" value="취소">
+                <input type="submit" class="btn-navy btn-lg" value="등록">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

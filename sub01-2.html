@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li class="on"><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">회원관리</a></li>
+                <li><a href="">상세</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="overflow-h">
+                <h2 class="inputTitle float-l">회원상세 <span class="font-b">ABC Corp.</span></h2>
+                <input type="submit" id="openPopupSub01-request" class="btn-blue btn-lg float-r" value="결제요청">
+            </div>
+            <hr class="mt10">
+            
+            <div class="tabSec mt30">
+                <span id="openSub01-2_basic" class="tab-btn on">기본정보</span>
+                <span id="openSub01-2_payment" class="tab-btn">결제내역 (<span class="font-blue font-b">5</span>건)</span>
+            </div>
+
+            <!------------------------------------ 
+            -             기본정보 탭             -
+            ------------------------------------->
+            <div id="sub01-2_basic" class="tabBox mt0 on">
+                <table class="type3">
+                    <colgroup>
+                        <col width="15%">
+                        <col width="35%">
+                        <col width="15%">
+                        <col width="35%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">회원가입일</th>
+                            <td>2020-08-15 16:30:27</td>
+                            <th scope="row">계약여부</th>
+                            <td>계약완료 (2020-10-04 09:35:01)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">아이디</th>
+                            <td>
+                                <span class="line-height32">abc123</span>
+                                <span class="float-r mr10">
+                                    <input type="button" class="btn-gray btn-sm" value="비밀번호 변경">
+                                </span>
+                            </td>
+                            <th scope="row">세무코드</th>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">기업명</th>
+                            <td>ABC Corp.</td>
+                            <th scope="row">주소</th>
+                            <td class="line-height20">87 Nguyen Thi Thap, The New Urban Him Lam, Tan Hung Ward, District 7, HCMC</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">담당자</th>
+                            <td>Logan</td>
+                            <th scope="row">대표자</th>
+                            <td>James</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">연락처</th>
+                            <td>010-0000-1234</td>
+                            <th scope="row">대표번호</th>
+                            <td>064-123-0000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이메일</th>
+                            <td>abc123@abccompany.com</td>
+                            <th scope="row">FAX</th>
+                            <td>064-124-5690</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="font-s16 font-b mt50">메모</p>
+                <div class="contBox font-s16 line-height34" contenteditable="true">
+                    <p>- VAT 영수증 500장 구매, 기초교육 2회 진행 예정</p>
+                    <p>- 초기 셋업비 할인(30%)</p>
+                    <p>- 추후에 타 지점 추가 설치 가능(2021년 이후)</p>
+                </div>
+            </div>
+
+            <!------------------------------------ 
+            -             결제내역 탭             -
+            ------------------------------------->
+            <div id="sub01-2_payment" class="tabBox mt20">
+                <table class="type1">
+                    <colgroup>
+                        <col width="5%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="8%">
+                        <col width="12%">
+                        <col width="8%">
+                        <col width="20%">
+                        <col width="7%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">결제내용</th>
+                            <th scope="col">결제 요청일</th>
+                            <th scope="col" class="line-height20">결제금액<br>(VND)</th>
+                            <th scope="col">결제방법</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">상태 변경일</th>
+                            <th scope="col">영수증</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>27</td>
+                            <td>홍길동님의 8월 결제내역</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>-</td>
+                            <td>결제요청</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>26</td>
+                            <td>ABC 담당자 결제</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>신용카드</td>
+                            <td>결제완료</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td><span class="iconDownload"></span></td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>25</td>
+                            <td>6월 상담 결제</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>실시간계좌이체</td>
+                            <td>취소완료</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td><span class="iconDownload"></span></td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>24</td>
+                            <td>홍길동님의 8월 결제내역</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>-</td>
+                            <td>결제요청</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>23</td>
+                            <td>ABC 담당자 결제</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>신용카드</td>
+                            <td>결제완료</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td><span class="iconDownload"></span></td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>22</td>
+                            <td>6월 상담 결제</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>실시간계좌이체</td>
+                            <td>취소완료</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td><span class="iconDownload"></span></td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>21</td>
+                            <td>홍길동님의 8월 결제내역</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>-</td>
+                            <td>결제요청</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>20</td>
+                            <td>ABC 담당자 결제</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>신용카드</td>
+                            <td>결제완료</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td><span class="iconDownload"></span></td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>19</td>
+                            <td>6월 상담 결제</a></td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>실시간계좌이체</td>
+                            <td>취소완료</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td><span class="iconDownload"></span></td>
+                        </tr>
+                        <tr class="openPopupSub01-detail linkRow">
+                            <td>18</td>
+                            <td>홍길동님의 8월 결제내역</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>1,500,000</td>
+                            <td>-</td>
+                            <td>결제요청</td>
+                            <td>2020-08-15 15:28:07</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="paging mt20">
+                    <li><a href=""></a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <input type="button" onclick="location.href='sub01.html'" class="btn-navy btn-lg btn-center mt30" value="목록">
+        </form>
+
+        
+        <!-- 결제요청 팝업 -->
+        <div id="popupSub01-request" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">결제 요청</h2>
+                </div>
+                <div class="popupMain">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">기업명</th>
+                                <td>ABC Corp.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">세무코드</th>
+                                <td>1234567890</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결제내용</th>
+                                <td>
+                                    <input type="text" name="" id="popupSub01_payType" class="w100p">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">상품</th>
+                                <td>
+                                    <select name="" id="popupSub01_product" class="w100p">
+                                        <option value="선택">선택</option>
+                                        <option value="am-200">AM-200</option>
+                                        <option value="am-500">AM-500</option>
+                                        <option value="am-700">AM-700</option>
+                                        <option value="am-1000">AM-1000</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결제 상세 내역</th>
+                                <td>
+                                    <textarea name="" id="popupSub01_detail" class="mt15" rows="7"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">총 결제금액</th>
+                                <td>
+                                    <div class="inputWrap">
+                                        <input type="text" name="" id="popupSub01_totalPrice" class="w90p">
+                                        <label for="popupSub01_totalPrice" class="w10p txtcenter">VND</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btnWrap mt20">
+                        <input type="reset" id="popupSub01_cancel" class="btn-white btn-lg w20p mr10" value="취소">
+                        <input type="submit" class="btn-navy btn-lg w20p" value="결제 요청">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 결제상세 팝업 -->
+        <div id="popupSub01-detail" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">결제 상세 내역</h2>
+                </div>
+                <div class="popupMain">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">기업명</th>
+                                <td>ABC Corp.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결제요청일</th>
+                                <td>2020-08-15 16:30:27</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">상태</th>
+                                <td>결제완료 (2020-10-04 09:35:01)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결제내용</th>
+                                <td>
+                                    <span class="float-l">AM-500 (패키지 500장)</span>
+                                    <span class="float-r">500,000 VND</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결제 상세 내역</th>
+                                <td class="line-height2">
+                                    <p class="overflow-h mt10">
+                                        <span class="float-l">- 셋업비</span>
+                                        <span class="float-r">1,500,000 VND</span>
+                                    </p>
+                                    <p class="overflow-h">
+                                        <span class="float-l">- 교육비</span>
+                                        <span class="float-r">250,000 VND</span>
+                                    </p>
+                                    <p class="overflow-h">
+                                        <span class="float-l">- 서류 재지원비</span>
+                                        <span class="float-r">250,000 VND</span>
+                                    </p>
+                                    <p class="overflow-h mb10">
+                                        <span class="float-l">- 셋업비</span>
+                                        <span class="float-r">500,000 VND</span>
+                                    </p> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">총 결제금액</th>
+                                <td class="font-b">3,000,000 VND</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">결제수단</th>
+                                <td>신용카드</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btnWrap mt20">
+                        <input type="reset" id="popupSub01-detail_cancel" class="btn-white btn-lg w20p mr10" value="취소">
+                        <input type="submit" class="btn-navy btn-lg w20p" value="결제 요청">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

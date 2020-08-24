@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li><a href="sub01.html">회원관리</a></li>
+                <li class="on"><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">결제내역관리</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="contBox">
+                <div class="inputWrap">
+                    <label for="sub02_dateSearch" class="w7p mr3p">기간검색</label>
+                    <select name="" id="sub02_dateSearch" class="w17p mr3p">
+                        <option value="회원가입일" selected>결제요청일</option>
+                        <option value="계약일">상태변경일</option>
+                    </select>
+                    <input type="date" name="" id="" class="w20p">
+                    <span class="w10p txtcenter font-b">-</span>
+                    <input type="date" name="" id="" class="w20p">
+                </div>
+                <div class="inputWrap mt10">
+                    <label for="sub02_contract" class="w7p mr3p">결제방법</label>
+                    <select name="" id="sub02_contract" class="w17p mr3p">
+                        <option value="승인 요청일" selected>전체</option>
+                        <option value="승인 완료일">신용카드</option>
+                        <option value="사용준비 완료일">실시간계좌이체</option>
+                    </select>
+                    <input type="text" name="" id="" class="w57p mr3p" placeholder="담당자, 연락처로 검색">
+                    <input type="button" class="btn-blue btn-lg w10p" value="검색">
+                </div>
+            </div>
+            <p class="searchingData mt50">검색결과 총 <span class="font-blue">27</span>건</p>
+            <table id="dataTable" class="type1 mt20">
+                <colgroup>
+                    <col width="5%">
+                    <col width="7%">
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="10%">
+                    <col width="15%">
+                    <col width="8%">
+                    <col width="20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">담당자</th>
+                        <th scope="col">연락처</th>
+                        <th scope="col">결제요청일</th>
+                        <th scope="col" class="line-height20">결제금액<br>(VND)</th>
+                        <th scope="col">결제방법</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">상태변경일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>27</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>-</td>
+                        <td>결제요청</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>26</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>신용카드</td>
+                        <td>결제완료</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>25</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>실시간계좌이체</td>
+                        <td>취소완료</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>24</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>-</td>
+                        <td>결제요청</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>23</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>신용카드</td>
+                        <td>결제완료</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>22</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>실시간계좌이체</td>
+                        <td>취소완료</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>21</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>-</td>
+                        <td>결제요청</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>20</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>신용카드</td>
+                        <td>결제완료</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>19</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>실시간계좌이체</td>
+                        <td>취소완료</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                    <tr onclick="location.href='sub02-1.html'" class="linkRow">
+                        <td>18</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>1,500,000</td>
+                        <td>-</td>
+                        <td>결제요청</td>
+                        <td>2020-08-15 15:28:07</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="paging mt20">
+                <li><a href=""></a></li>
+                <li><a href="" class="on">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""></a></li>
+            </ul>             
+        </form>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li class="on"><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">영수증 양식 관리</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="contBox">
+                <div class="inputWrap">
+                    <label for="sub03_billType" class="w12p mr3p">영수증 유형</label>
+                    <select name="" id="sub03_billType" class="w22p mr3p">
+                        <option value="전체" selected>전체</option>
+                        <option value="VAT영수증" selected>VAT영수증</option>
+                        <option value="판매영수증">판매영수증</option>
+                        <option value="판매영수증(기관)">판매영수증(기관)</option>
+                        <option value="회사내 운송 전표">회사내 운송 전표</option>
+                        <option value="회사내 위탁전표">회사내 위탁전표</option>
+                    </select>
+                    <input type="text" name="" id="" class="w47p mr3p">
+                    <input type="button" name="" id="" class="btn-blue btn-lg w10p" value="검색">
+                </div>
+            </div>
+            <p class="searchingData mt50">검색결과 총 <span class="font-blue">159</span>건</p>
+            <table id="dataTable" class="type1 mt20">
+                <colgroup>
+                    <col width="10%">
+                    <col width="20%">
+                    <col width="40%">
+                    <col width="15%">
+                    <col width="15%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">영수증 유형</th>
+                        <th scope="col">샘플 양식명</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="linkRow">
+                        <td  onclick="location.href='sub03-2.html'">15</td>
+                        <td onclick="location.href='sub03-2.html'">VAT영수증</td>
+                        <td onclick="location.href='sub03-2.html'">VAT영수증 A Type</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">14</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증 샘플</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">13</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증(기관)</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증(기관) 양식</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">12</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 운송 전표</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 운송 전표 A</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">11</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 위탁 전표</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 위탁 전표  sample</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">10</td>
+                        <td onclick="location.href='sub03-2.html'">VAT영수증</td>
+                        <td onclick="location.href='sub03-2.html'">VAT영수증 A Type</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">9</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증 샘플</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">8</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증(기관)</td>
+                        <td onclick="location.href='sub03-2.html'">판매영수증(기관) 양식</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow" class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">7</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 운송 전표</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 운송 전표 A</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td onclick="location.href='sub03-2.html'"><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                    <tr class="linkRow" class="linkRow">
+                        <td onclick="location.href='sub03-2.html'">6</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 위탁 전표</td>
+                        <td onclick="location.href='sub03-2.html'">회사내 위탁 전표 sample</td>
+                        <td onclick="location.href='sub03-2.html'">2020-08-15</td>
+                        <td><input type="button" class="btn-gray btn-center w60p sub03_deleteRow" value="삭제"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="overflow-h mt20">
+                <input type="button" onclick="location.href='sub03-1.html'" class="btn-navy btn-lg float-r" value="등록">
+            </div>
+            <ul class="paging">
+                <li><a href=""></a></li>
+                <li><a href="" class="on">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""></a></li>
+            </ul>             
+        </form>
+
+        <!-- 삭제 팝업 -->
+        <div id="popupSub03-delete" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">삭제하시겠습니까?</h2>
+                </div>
+                <div class="popupMain">
+                    <div class="btnWrap">
+                        <input type="button" id="popupSub03-delete_cancel" class="btn-navy btn-lg mr10" value="취소">
+                        <input type="submit" class="btn-white btn-lg" value="확인">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

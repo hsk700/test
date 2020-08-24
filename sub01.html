@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li class="on"><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">회원관리</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="contBox">
+                <div class="inputWrap">
+                    <label for="sub01_dateSearch" class="w7p mr3p">기간검색</label>
+                    <select name="" id="sub01_dateSearch" class="w17p mr3p">
+                        <option value="회원가입일" selected>회원가입일</option>
+                        <option value="계약일">계약일</option>
+                    </select>
+                    <input type="date" name="" id="" class="w20p">
+                    <span class="w10p txtcenter font-b">-</span>
+                    <input type="date" name="" id="" class="w20p">
+                </div>
+                <div class="inputWrap mt10">
+                    <label for="sub01_contract" class="w7p mr3p">계약여부</label>
+                    <select name="" id="sub01_contract" class="w17p mr3p">
+                        <option value="전체" selected>전체</option>
+                        <option value="계약완료">계약완료</option>
+                        <option value="미계약">미계약</option>
+                    </select>
+                    <input type="text" name="" id="" class="w57p mr3p" placeholder="아이디, 담당자, 연락처, 이메일, 기업명, 세무코드로 검색">
+                    <input type="button" class="btn-blue btn-lg w10p" value="검색">
+                </div>
+            </div>
+            <p class="searchingData mt50">검색결과 총 <span class="font-blue">159</span>건</p>
+            <table id="dataTable" class="type1 mt20">
+                <colgroup>
+                    <col width="4%">
+                    <col width="6%">
+                    <col width="6%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="6%">
+                    <col width="6%">
+                    <col width="12%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">아이디</th>
+                        <th scope="col">담당자</th>
+                        <th scope="col">연락처</th>
+                        <th scope="col">이메일</th>
+                        <th scope="col">기업명</th>
+                        <th scope="col">세무코드</th>
+                        <th scope="col">회원가입일</th>
+                        <th scope="col" class="line-height20">계약<br>여부</th>
+                        <th scope="col" class="line-height20">결제<br>내역</th>
+                        <th scope="col">계약일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>159</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>abc@abc.com</td>
+                        <td>abc company</td>
+                        <td>1234567890</td>
+                        <td>2020-08-15</td>
+                        <td>Y</td>
+                        <td>5건</td>
+                        <td>2020-08-10</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>158</td>
+                        <td>nextez</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>abc@abc.com</td>
+                        <td>nextez</td>
+                        <td>0001110302</td>
+                        <td>2020-07-30</td>
+                        <td>N</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>157</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>cs@cs.com</td>
+                        <td>CS</td>
+                        <td>5900391548</td>
+                        <td>2019-01-03</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>156</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>abc@abc.com</td>
+                        <td>abc company</td>
+                        <td>1234567890</td>
+                        <td>2020-08-15</td>
+                        <td>Y</td>
+                        <td>25건</td>
+                        <td>2020-02-11</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>155</td>
+                        <td>nextez</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>abc@abc.com</td>
+                        <td>nextez</td>
+                        <td>0001110302</td>
+                        <td>2020-07-30</td>
+                        <td>N</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>154</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>cs@cs.com</td>
+                        <td>CS</td>
+                        <td>5900391548</td>
+                        <td>2019-01-03</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>153</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>abc@abc.com</td>
+                        <td>abc company</td>
+                        <td>1234567890</td>
+                        <td>2020-08-15</td>
+                        <td>Y</td>
+                        <td>25건</td>
+                        <td>2018-09-24</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>152</td>
+                        <td>nextez</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>abc@abc.com</td>
+                        <td>nextez</td>
+                        <td>0001110302</td>
+                        <td>2020-07-30</td>
+                        <td>N</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>151</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>cs@cs.com</td>
+                        <td>CS</td>
+                        <td>5900391548</td>
+                        <td>2019-01-03</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr onclick="location.href='sub01-2.html'" class="linkRow">
+                        <td>150</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>010-1111-2222</td>
+                        <td>cs@cs.com</td>
+                        <td>CS</td>
+                        <td>5900391548</td>
+                        <td>2019-01-03</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="overflow-h mt20">
+                <input type="button" onclick="location.href='sub01-1.html'" class="btn-navy btn-lg float-r" value="등록">
+            </div>
+            <ul class="paging">
+                <li><a href=""></a></li>
+                <li><a href="" class="on">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""></a></li>
+            </ul>             
+        </form>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

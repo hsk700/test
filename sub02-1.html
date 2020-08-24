@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li><a href="sub01.html">회원관리</a></li>
+                <li class="on"><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">결제내역관리</a></li>
+                <li><a href="">상세</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <div class="contentWrap mt50">
+            <h2 class="inputTitle border-b-blk">결제 내역 상세</h2>
+            <p class="font-s16 font-b font-blue mt30">회원정보</p>
+            <table class="type3 mt20">
+                <colgroup>
+                    <col width="10%">
+                    <col width="40%">
+                    <col width="10%">
+                    <col width="40%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td>abc123</td>
+                        <th scope="row">세무코드</th>
+                        <td>1234567890</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기업명</th>
+                        <td>ABC Corp.</td>
+                        <th scope="row">주소</th>
+                        <td>87 Nguyen Thi Thap, The New Urban Him Lam, Tan Hung Ward, District 7, HCMC</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">담당자</th>
+                        <td>Logan</td>
+                        <th scope="row">대표자</th>
+                        <td>James</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">연락처</th>
+                        <td>010-0000-1234</td>
+                        <th scope="row">대표번호</th>
+                        <td>064-123-0000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일</th>
+                        <td>abc123@abccompany.com</td>
+                        <th scope="row">FAX</th>
+                        <td>064-124-5690</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="font-s16 font-b font-blue mt30">결제정보</p>
+            <table class="type3 mt20">
+                <colgroup>
+                    <col width="10%">
+                    <col width="40%">
+                    <col width="10%">
+                    <col width="40%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">결제요청일</th>
+                        <td>2020-08-15 16:30:27</td>
+                        <th scope="row">상태</th>
+                        <td>
+                            <span class="line-height32">결제완료 (2020-10-04 09:35:01)</span>
+                            <button type-button class="float-r btn-white">영수증<span class="iconDownload"></span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">결제내용</th>
+                        <td colspan="3">홍길동님의 8월 결제 내역</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">상품</th>
+                        <td colspan="3">AM-500 (패키지 500장) -1,500,000 VND</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">결제 상세 내역</th>
+                        <td colspan="3" class="line-height2">
+                            <p class="mt10">
+                                <span class="w30p">- 셋업비</span>
+                                <span class="w20p txtright">1,500,000 VND</span>
+                            </p>
+                            <p>
+                                <span class="w30p">- 교육비</span>
+                                <span class="w20p txtright">250,000 VND</span>
+                            </p>
+                            <p>
+                                <span class="w30p">- 서류 재지원비</span>
+                                <span class="w20p txtright">250,000 VND</span>
+                            </p>
+                            <p class="mb10">
+                                <span class="w30p">- 셋업비</span>
+                                <span class="w20p txtright">500,000 VND</span>
+                            </p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">총 결제금액</th>
+                        <td><span class="font-blue font-b">3,000,000</span><span class="font-b">&nbsp;VND</span></td>
+                        <th scope="row">결제수단</th>
+                        <td>신용카드</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btnWrap mt50">
+                <input type="button" class="btn-gray btn-lg mr10" value="결제 취소">
+                <input type="button" class="btn-navy btn-lg" onclick="location.href='sub02.html'" value="목록">
+            </div>
+        </div>        
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>
