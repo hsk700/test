@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/*************************************
+*            Header layout           *
+*************************************/
+#topSec{border-top: 8px solid rgba(0,0,0,0.5); line-height: 92px;}
+#topSec > .innerWrap{display: flex; justify-content: space-between;}
+#topSec .logo{display: inline-block;}
+#topSec .logo h1{
+    background: url("../img/logo_title.png")50% 50% no-repeat; width: 389px; height: 24px; display: inline-block; vertical-align: middle;
+}
+#topSec .myList{float:right;}
+#topSec .myList li{float: left; margin-right:32px; position: relative;}
+#topSec .myList li a{display: block; font-size: 14px; color:#151515}
+#topSec .myList li a.logout{color:#01a5be;}
+#topSec .myList li a:after{content: ""; width: 1px; height: 12px; background-color:#151515; position: absolute; top: 40px; right: -16px;}
+#topSec .myList li:last-child a:after{content: none;}
+
+#gnbSec{
+    -webkit-background: linear-gradient(to right, #0283bf, #05a8c0);
+    -moz-background: linear-gradient(to right, #0283bf, #05a8c0);
+    -ms-background: linear-gradient(to right, #0283bf, #05a8c0);
+    -o-background: linear-gradient(to right, #0283bf, #05a8c0);
+    background: linear-gradient(to right, #0283bf, #05a8c0);
+}
+#gnbSec .gnb{height: 52px;}
+#gnbSec .gnb li{float: left; width: 16.66%; text-align: center; position: relative;}
+#gnbSec .gnb li.on, #gnbSec .gnb li:hover{background: #fff;}
+#gnbSec .gnb li.on::before, #gnbSec .gnb li:hover::before{content: ""; position: absolute; top: -3px; left: 0; width: 100%; height: 3px; background-color: #0388bf;}
+#gnbSec .gnb li a{line-height: 52px; font-size: 18px; color:#fff;}
+#gnbSec .gnb li.on a, #gnbSec .gnb li:hover a{color:#0284bf;}
+
+
+/* Dep2 추후 발생시 활성화 *******************************
+#dep2Sec{background-color: #f5f5f5; height: 46px; line-height: 46px;}
+#dep2Sec ul{overflow: hidden; display: none;}
+#dep2Sec ul.on, #dep2Sec ul.hover{display: block;}
+#dep2Sec ul li{float: left; position: relative; text-align: center;}
+#dep2Sec ul li a{color:#232323;}
+#dep2Sec ul li a.on{color: #0391bf;}
+#dep2Sec ul li a:after{content: ""; width: 1px; height: 13px; background-color:#c9c9c9; position: absolute; top: 17px; right: 0;}
+#dep2Sec ul li:last-child a:after{content: none;}
+
+#dep2Sec .subMenu01 li{width: 14.28%;}
+#dep2Sec .subMenu02 li{width: 20%;}
+#dep2Sec .subMenu04 li{width: 20%;}
+#dep2Sec .subMenu05 li{width: 20%;}
+#dep2Sec .subMenu06 li{width: 20%;}
+******************************* //Dep2 추후 발생시 활성화 */
+
+
+/*************************************
+*             main layout            *
+*************************************/
+main{padding: 0 0 60px;}
+main .stepSec{overflow: hidden;}
+main .stepSec ul{float: right;}
+main .stepSec ul li{float: left; margin-left: 28px;}
+main .stepSec ul li a{display: block; position: relative; font-size: 14px; color: #464646;}
+main .stepSec ul li a:after{content: ""; width: 6px; height: 10px; position: absolute; top: 3px; right: -17px; background: url(../img/icon_arrow_gray_right.png)100% 100% no-repeat;}
+main .stepSec ul li:last-child a:after{content: none;}
+main .stepSec ul li .home{width: 21px; height: 17px; background: url(../img/icon_home.png)50% 0% no-repeat;}
+
+main .contTitle{font-size: 18px; font-weight: bold; color: #0391bf;}
+
+main .tabBox{margin-top: -1px; border: 1px solid #464646; padding: 20px; display: none;}
+main .tabBox.on{display: block;}
+
+main .btnWrap{text-align: center; font-size: 0; position: relative;}
+main .btnWrap input.resetBtn{position: absolute; top: 0; right: 0; margin-right: 0; padding: 0 20px 0 35px; background: url("../img/icon_reset.png")19% 49% no-repeat; text-align: right;}
+
+.searchingData,.searchingData+div{line-height: 32px; font-size: 15px;}
+.searchingData+div>*{float: left; margin-left:5px;}
+
+button.zoomIn{width: 21px; height: 21px; padding: 0; border: none; border-radius: 0; display: inline-block; background: url("../img/icon_plus_gray.png")50% 50% no-repeat;}
+button.zoomOut{width: 21px; height: 21px; padding: 0; border: none; border-radius: 0; display: inline-block; background: url("../img/icon_minus_gray.png")50% 50% no-repeat;}
+
+span.iconDownload{width: 17px; height: 17px; display: inline-block; vertical-align: middle; background: url(../img/icon_download.png)50% 50% no-repeat;}
+
+
+/*************************************
+*            Pop-Up layout           *
+*************************************/
+.popupBg{position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.9); display: none;}
+.popupFrame{background-color: #fff;}
+
+#popupSub01-request .popupFrame{width: 720px; margin: 162px auto 0;}
+#popupSub01-detail .popupFrame{width: 720px; margin: 162px auto 0;}
+
+#popupSub03-delete .popupFrame{width: 350px; margin: 400px auto 0;}
+
+#popupSub04-confirm .popupFrame{width: 350px; margin: 401px auto 0;}
+#popupSub04-ready .popupFrame{width: 350px; margin: 401px auto 0;}
+
+#popupSub05-regit .popupFrame{width: 520px; margin: 247px auto 0;}
+#popupSub05-modify .popupFrame{width: 520px; margin: 275px auto 0;}
+#popupSub05-modify_pwChangeOpen1, #popupSub05-modify_pwChangeOpen2{display: none;}
+
+.popupBg .popupFrame .popupHeader{background-color: #464646; padding-left: 32px;}
+.popupBg .popupFrame .popupHeader .popupTitle{font-size: 18px; color: #fff; line-height: 56px;}
+
+.popupBg .popupFrame .popupMain{padding:20px 40px;}
+
+.popupBg .popupFrame .popupFooter{text-align: center; padding:20px;}
+.popupBg .popupFrame .popupFooter input{display: inline-block; margin: 0 5px; text-align: center; width: 93px; line-height: 35px;}
+
+
+/*************************************
+*            Login layout            *
+*************************************/
+#loginWrap{text-align: center; padding-top: 127px;}
+#loginWrap .loginTitle{font-size: 44px; font-weight: bold; color: #06598c;}
+#loginWrap .loginSubTitle{font-size: 25px; font-weight: bold; color: #000;}
+#loginWrap .alertPassword{font-size: 16px; font-weight: bold; color: #ff0000; display: none;}
+#loginWrap .alertPassword.fail{display: block;}
+
+
+
+/*************************************
+*            Footer layout           *
+*************************************/
+footer{background-color: #4e4e4e;}
+footer > .innerWrap{overflow: hidden;}
+footer .logo{padding-left: 80px; color: #fff; line-height: 100px; display: inline-block; font-size: 17px;}
+footer .fammilySite{float: right; width: 150px; height: 30px; margin: 35px 40px 0 0;}
+
+

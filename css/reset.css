@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'NanumSquare';
+    src: url(../font/NanumSquareR.eot);
+    src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(../font/NanumSquareR.woff) format('woff'),
+         url(../font/NanumSquareR.ttf) format('truetype');
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'NanumSquare', sans-serif;
+}
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, address, small, strong, time,
+dl, dt, dd, ol, ul, li,
+form, label, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, figcaption, footer, header, main, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6, p, span{
+    font-weight: normal;
+}
+strong{
+    font-weight: bold;
+}
+article, aside, figcaption, figure, 
+header, footer, main, menu, nav, section{
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+img{
+    display: block;
+}
+button, 
+input[type=button], input[type=submit], input[type=reset]{
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+}
+input:not([type=checkbox], [type=password], [type=text]){
+    padding-left: 15px;
+    cursor: pointer;
+}
+input[type=checkbox]+label, input[type=radio]+label{
+    cursor: pointer !important;
+}
+label{
+    font-size: 15px; font-weight: bold; display: inline-block; vertical-align: baseline;
+}
+input:disabled, select:disabled{background-color: #f0f0f0;}
+select{
+    padding-left: 10px;
+}
+span{
+    display: inline-block;
+    font-size: 15px;
+}
+.hide{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+a{
+    text-decoration: none;
+}
