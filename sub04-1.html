@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li class="on"><a href="sub04.html">책자승인관리</a></li>
+                <li><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">책자승인관리</a></li>
+                <li><a href="">상세</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <div class="contentWrap mt50">
+            <table class="type3">
+                <colgroup>
+                    <col width="15%">
+                    <col width="35%">
+                    <col width="15%">
+                    <col width="35%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">승인요청일</th>
+                        <td>2020-08-15 20:33:07</td>
+                        <th scope="row">승인요청일</th>
+                        <td>승인완료 (2020-08-16 10:08:57)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="font-s16 font-b font-blue mt50">회원 정보</p>
+            <table class="type3 mt20">
+                <colgroup>
+                    <col width="15%">
+                    <col width="35%">
+                    <col width="15%">
+                    <col width="35%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td>abc123</td>
+                        <th scope="row">세무코드</th>
+                        <td>1234567890</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">담당자</th>
+                        <td>홍길동</td>
+                        <th scope="row">기업명</th>
+                        <td>Vietnam Corp.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">연락처</th>
+                        <td>010-0000-1234</td>
+                        <th scope="row">주소</th>
+                        <td>87 Nguyen Thi Thap, The New Urban Him Lam, Tan Hung Ward, District 7, HCMC
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일</th>
+                        <td>abc123@vietnam.com</td>
+                        <th scope="row">대표자</th>
+                        <td>Logan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="font-s16 font-b font-blue mt50">책자 정보</p>
+            <form class="contentWrap mt20">
+                <div class="contBox overflow-h pb50">
+                    <div class="float-l w49p mr1">
+                        <div class="inputWrap">
+                            <label for="sub04-1_billType" class="w25p mr3p">영수증 유형</label>
+                            <select name="" id="sub04-1_billType" class="w72p" disabled>
+                                <option value="선택">선택</option>
+                                <option value="VAT영수증" selected>VAT영수증</option>
+                                <option value="판매영수증">판매영수증</option>
+                                <option value="판매영수증(기관)">판매영수증(기관)</option>
+                                <option value="회사내 운송 전표">회사내 운송 전표</option>
+                                <option value="회사내 위탁전표">회사내 위탁전표</option>
+                            </select>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_typeName" class="w25p mr3p">양식명</label>
+                            <input type="text" name="" id="sub04-1_typeName" class="w72p" value="VAT 영수증 A Type" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_typeNum" class="w25p mr3p">양식번호</label>
+                            <input type="text" name="" id="sub04-1_typeNum" class="w72p" value="01GTKT0/001" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_serialNum" class="w25p mr3p">일련번호</label>
+                            <input type="text" name="" id="sub04-1_serialNum" class="w72p" value="AB/20E" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_startNum" class="w25p mr3p">시작번호</label>
+                            <input type="text" name="" id="sub04-1_startNum" class="w72p" value="000001" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_endNum" class="w25p mr3p">종료번호</label>
+                            <input type="text" name="" id="sub04-1_endNum" class="w72p" value="000500" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_total" class="w25p mr3p">합계</label>
+                            <input type="text" name="" id="sub04-1_total" class="w72p" value="500" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_billType" class="w25p mr3p">영수증양식</label>
+                            <input type="text" name="" id="sub04-1_billType" class="w72p" value="A Type New" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_autoCreate" class="w25p mr3p">전표 자동생성</label>
+                            <input type="text" name="" id="sub04-1_autoCreate" class="w72p" value="Y" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_emailDisplay" class="w25p mr3p">이메일 주소 표시</label>
+                            <input type="text" name="" id="sub04-1_emailDisplay" class="w72p" value="000001" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_date" class="w25p mr3p">등록일</label>
+                            <input type="text" name="" id="sub04-1_date" class="w72p" value="2020-08-15 09:37:41" disabled>
+                        </div>
+                        <div class="inputWrap mt10">
+                            <label for="sub04-1_modify" class="w25p mr3p">수정일</label>
+                            <input type="text" name="" id="sub04-1_modify" class="w72p" value="2020-08-20 16:23:08" disabled>
+                        </div>
+                    </div>
+                    <div class="float-r w49p ml1p">
+                        <div class="overflow-h mt5">
+                            <span class="float-l font-b line-height35">미리보기</span>
+                            <span class="float-r pt7">
+                                <button type="button" class="zoomIn"></button>
+                                <button type="button" class="zoomOut"></button>
+                            </span>
+                        </div>
+                        <div class="contBox txtcenter">
+                            <img src="img/img_bill_sample.png" class="h100p" alt="영수증 양식 샘플">
+                        </div>
+                    </div>
+                </div>
+                <div class="btnWrap txtcenter mt50">
+                    <input type="button" onclick="location.href='sub04.html'" class="btn-white btn-lg mr10" value="목록">
+                    <input type="button" id="openPopupSub04-confirm" class="btn-blue btn-lg mr10" value="승인">
+                    <input type="submit" id="openPopupSub04-ready" class="btn-navy btn-lg" value="사용준비완료">
+                </div>
+            </form>
+        </div>
+
+        <!-- Confirm 팝업 -->
+        <div id="popupSub04-confirm" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">승인하시겠습니까?</h2>
+                </div>
+                <div class="popupMain">
+                    <div class="btnWrap">
+                        <input type="button" id="popupSub04-confirm_cancel" class="btn-white btn-lg mr10" value="취소">
+                        <input type="submit" class="btn-blue btn-lg mr10" value="확인">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Ready 팝업 -->
+        <div id="popupSub04-ready" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">사용준비완료 처리하시겠습니까?</h2>
+                </div>
+                <div class="popupMain">
+                    <div class="btnWrap">
+                        <input type="button" id="popupSub04-ready_cancel" class="btn-white btn-lg mr10" value="취소">
+                        <input type="submit" class="btn-blue btn-lg mr10" value="확인">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

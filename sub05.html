@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남 기업사용자용 SmartBill 플랫폼</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div id="topSec">
+            <div class="innerWrap">
+                <a href="" class="logo">
+                    <h1><span class="hide">베트남 기업사용자용Smart Bill 플랫폼</span></h1>
+                </a>
+                <ul class="myList">
+                    <li><a href="">홈페이지</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="login.html" class="logout">로그아웃</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div id="gnbSec" class="wrapper">
+            <ul class="gnb innerWrap">
+                <li><a href="sub01.html">회원관리</a></li>
+                <li><a href="sub02.html">결제내역관리</a></li>
+                <li><a href="sub03.html">영수증양식관리</a></li>
+                <li><a href="sub04.html">책자승인관리</a></li>
+                <li class="on"><a href="sub05.html">계정관리</a></li>
+                <li><a href="">코드관리</a></li>
+            </ul>
+        </div>
+        <!-- Dep2 추후 발생시 활성화 
+            ul에 'on'class 추가시 display: block;됨
+            li에 'on'class 추가시 color: #0284bf;됨
+        <div id="dep2Sec" class="wrapper">
+            <div class="contentWrap">
+                <ul class="subMenu01">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu02">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu03">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu04">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu05">
+                    <li><a href=""></a></li>
+                </ul>
+                <ul class="subMenu06">
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </header>
+    <main>
+        <div class="stepSec contentWrap">
+            <ul>
+                <li><a href="" class="home"><span class="hide">홈</span></a></li>
+                <li><a href="">계정관리</a></li>
+            </ul>
+        </div>
+        <hr class="mt10">
+        <form class="contentWrap mt50">
+            <div class="contBox">
+                <div class="inputWrap mt10">
+                    <label for="sub05_contract" class="w7p mr3p">권한</label>
+                    <select name="" id="sub05_contract" class="w17p mr3p">
+                        <option value="회원가입일" selected>전체</option>
+                        <option value="계약일">최고관리자</option>
+                        <option value="계약일">승인담당자</option>
+                    </select>
+                    <input type="text" name="" id="" class="w57p mr3p" placeholder="아이디, 관리자이름으로 검색">
+                    <input type="button" class="btn-blue btn-lg w10p" value="검색">
+                </div>
+            </div>
+            <p class="searchingData mt50">검색결과 총 <span class="font-blue">27</span>건</p>
+            <table id="dataTable" class="type1 mt20">
+                <colgroup>
+                    <col width="5%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="25%">
+                    <col width="20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">아이디</th>
+                        <th scope="col">관리자 이름</th>
+                        <th scope="col">권한</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">관리툴</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>27</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>최고관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>nextez</td>
+                        <td>홍길동</td>
+                        <td>승인관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>계약관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>최고관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>nextez</td>
+                        <td>홍길동</td>
+                        <td>승인관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>계약관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>최고관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>nextez</td>
+                        <td>홍길동</td>
+                        <td>승인관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>cs</td>
+                        <td>홍길동</td>
+                        <td>계약관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>abc123</td>
+                        <td>홍길동</td>
+                        <td>최고관리자</td>
+                        <td>2020-08-15 15:28:07</td>
+                        <td>
+                            <input type="button" class="btn-blue btn-middle w40p mr1p openPopupSub05-modify" value="수정">
+                            <input type="button" class="btn-gray btn-middle w40p" value="삭제">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="overflow-h mt30">
+                <input type="submit" id="openPopupSub05-regit" class="btn-navy btn-lg float-r" value="등록">
+            </div>
+            <ul class="paging mt20">
+                <li><a href=""></a></li>
+                <li><a href="" class="on">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""></a></li>
+            </ul>             
+        </form>
+
+        <!-- 등록 팝업 -->
+        <div id="popupSub05-regit" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">관리자 계정 등록</h2>
+                </div>
+                <div class="popupMain">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_id">아이디</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="" id="popupSub05-regit_id" class="w100p">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_pw">비밀번호</label>
+                                </th>
+                                <td>
+                                    <input type="password" name="" id="popupSub05-regit_pw" class="w100p">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_pwConfirm">비밀번호 확인</label>
+                                </th>
+                                <td>
+                                    <input type="password" name="" id="popupSub05-regit_pwConfirm" class="w100p">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_managerName">관리자 이름</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="" id="popupSub05-regit_managerName" class="w100p">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_authority">권한</label>
+                                </th>
+                                <td>
+                                    <select name="" id="popupSub05-regit_authority" class="w100p">
+                                        <option value="선택" selected>선택</option>
+                                        <option value="최고관리자">최고관리자</option>
+                                        <option value="승인담당자">승인담당자</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btnWrap mt30">
+                        <input type="button" id="popupSub05-regit_cancel" class="btn-gray btn-lg mr10" value="취소">
+                        <input type="submit" class="btn-navy btn-lg" value="등록">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 수정 팝업 -->
+        <div id="popupSub05-modify" class="popupBg">
+            <form class="popupFrame">
+                <div class="popupHeader">
+                    <h2 class="popupTitle">관리자 계정 수정</h2>
+                </div>
+                <div class="popupMain">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_id">아이디</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="" id="popupSub05-regit_id" class="w100p pl15" value="abc123" disabled>
+                                </td>
+                            </tr>
+                            <tr id="popupSub05-modify_pwChange">
+                                <th scope="row">
+                                    <label for="popupSub05-regit_pwchangeBtn">비밀번호</label>
+                                </th>
+                                <td>
+                                    <input type="button" name="" id="popupSub05-regit_pwchangeBtn" class="btn-gray btn-lg" value="변경">
+                                </td>
+                            </tr>
+                            <tr id="popupSub05-modify_pwChangeOpen1">
+                                <th scope="row">
+                                    <label for="popupSub05-regit_pw">비밀번호</label>
+                                </th>
+                                <td>
+                                    <input type="password" name="" id="popupSub05-regit_pw" class="w100p">
+                                </td>
+                            </tr>
+                            <tr id="popupSub05-modify_pwChangeOpen2">
+                                <th scope="row">
+                                    <label for="popupSub05-regit_pwConfirm">비밀번호 확인</label>
+                                </th>
+                                <td>
+                                    <input type="password" name="" id="popupSub05-regit_pwConfirm" class="w100p">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_managerName">관리자 이름</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="" id="popupSub05-regit_managerName" class="w100p" value="홍길동">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="popupSub05-regit_authority">권한</label>
+                                </th>
+                                <td>
+                                    <select name="" id="popupSub05-regit_authority" class="w100p">
+                                        <option value="최고관리자" selected>최고관리자</option>
+                                        <option value="승인담당자">승인담당자</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btnWrap mt30">
+                        <input type="button" id="popupSub05-modify_cancel" class="btn-gray btn-lg mr10" value="취소">
+                        <input type="submit" class="btn-navy btn-lg" value="등록">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="innerWrap">
+            <h2 class="logo">
+                <strong>베트남 기업사용자용</strong> Smart Bill 플랫폼
+            </h2>
+            <select class="fammilySite">
+                <option value="A">바로가기</option>
+                <option value="B">B site</option>
+                <option value="C">C site</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>
