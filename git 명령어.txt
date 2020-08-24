@@ -1,0 +1,10 @@
+
+git init
+git remot add origin repository address
+
+git pull origin master
+
+git status
+git add .
+git commit-m"massage"
+git push origin +master
